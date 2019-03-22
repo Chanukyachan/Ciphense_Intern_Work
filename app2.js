@@ -39,6 +39,8 @@ google(userInput.toString(), function (err, res){
                   string = para.text().toLowerCase();
                   let str2 = string.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/,"");
 
+                  console.log("Frequency of words in the webpage :");
+                  
                    for(let k = 0;k < length;++k)
                    {
                        let occurrence = count(str2,userWords[k].toLowerCase(),true);
@@ -50,7 +52,7 @@ google(userInput.toString(), function (err, res){
       }
 
       else{
-          continue
+          continue;
       }
 
     }
