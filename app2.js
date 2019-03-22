@@ -35,7 +35,7 @@ google(userInput.toString(), function (err, res){
 
                   let $ = cheerio.load(html);
 
-                  let para = $;("h1,h2,h3,h4,div,p");
+                  let para = $;
                   string = para.text().toLowerCase();
                   let str2 = string.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/,"");
 
